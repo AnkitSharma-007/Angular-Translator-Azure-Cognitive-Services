@@ -1,0 +1,31 @@
+<h3>Multilanguage translator using Microsoft Translator API Cognitive Service</h3>
+<hr />
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <select class="form-control" [value]="translationResult?.detectedLanguage">
+                <option value="">--Select input language--</option>
+                <option *ngFor="let lang of availbleLanguage" value={{lang.languageID}}>
+                    {{lang.languageName}}
+                </option>
+            </select>
+            <textarea placeholder="Enter text to translate" class="form-control translation-box" rows="5"
+                [(ngModel)]="inputText"></textarea>
+        </div>
+        <div class="col-md-6">
+            <select class="form-control" (change)="setTargetlanguage($event)">
+                <option value="">--Select target language--</option>
+                <option *ngFor="let lang of availbleLanguage" value={{lang.languageID}}>
+                    {{lang.languageName}}
+                </option>
+            </select>
+            <textarea disabled class="form-control translation-box"
+                rows="5">{{translationResult?.translationOutput}}</textarea>
+        </div>
+    </div>
+    <div class="text-center">
+        <button [disabled]="loading" class="btn btn-primary btn-lg" (click)="GetTranslation()">
+            <span *ngIf="loading" class="spinner-border spinner-border-md mr-1"></span>Translate</button>
+    </div>
+</div>
