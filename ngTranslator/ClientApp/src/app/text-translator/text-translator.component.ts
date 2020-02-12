@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { TranslatorService } from '../services/translator.service';
+import { AvailableLanguage } from '../models/availablelanguage';
+import { TranslationResult } from '../models/translationresult';
 
 @Component({
   selector: 'app-text-translator',
