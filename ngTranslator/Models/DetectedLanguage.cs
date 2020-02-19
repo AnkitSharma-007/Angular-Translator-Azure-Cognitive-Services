@@ -1,4 +1,4 @@
-﻿namespace BlazorTranslator.Models
+﻿namespace ngTranslator.Models
 {
     public class DetectedLanguage
     {

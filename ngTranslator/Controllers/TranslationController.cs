@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Newtonsoft.Json;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
-using BlazorTranslator.Models;
+using ngTranslator.Models;
 using System.Net.Http;
 using System.Text;
 using ngTranslator.Models;

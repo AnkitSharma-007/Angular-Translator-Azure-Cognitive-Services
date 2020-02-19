@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace BlazorTranslator.Models
+namespace ngTranslator.Models
 {
     public class AvailableLanguage
     {
