@@ -1,6 +1,6 @@
 # Angular-Translator-Azure-Cognitive-Services
 
-We are going to create a multi-language translator using Angular and the Translate Text Azure Cognitive Service. This translator will be able to translate between more than 60 languages which are supported by the Translate Text API. We will supply the text to translate and the target language to our application and it will return the translated text and the detected language of the input text.
+We are going to create a multi-language translator using Angular and the Translate Text Azure Cognitive Service. This translator will be able to translate between more than 100 languages which are supported by the Translate Text API. We will supply the text to translate and the target language to our application and it will return the translated text and the detected language of the input text.
 
 # Demo
 
