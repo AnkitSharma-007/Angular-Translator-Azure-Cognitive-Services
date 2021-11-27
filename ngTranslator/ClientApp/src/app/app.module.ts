@@ -21,9 +21,9 @@ import { TextTranslatorComponent } from './text-translator/text-translator.compo
     HttpClientModule,
     FormsModule,
     RouterModule.forRoot([
-      { path: '', component: HomeComponent, pathMatch: 'full' },
-      { path: 'text-translator', component: TextTranslatorComponent },
-    ])
+    { path: '', component: HomeComponent, pathMatch: 'full' },
+    { path: 'text-translator', component: TextTranslatorComponent },
+], { relativeLinkResolution: 'legacy' })
   ],
   providers: [],
   bootstrap: [AppComponent]
